@@ -1,0 +1,52 @@
+body {
+    font-size: 12px;
+}
+
+.container {
+    display: grid;
+    row-gap: 3px;
+}
+
+.box {
+    width: 205px;
+    height: 205px;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: .4s ease;
+    cursor: pointer;
+}
+
+.b1:hover~.b2{
+    transform: translate(150%);
+    opacity: 0.9;
+}
+
+.b1:hover~.b3{
+    transform: translate(150%);
+    opacity: 0.9;
+}
+
+.b2:hover~.box {
+    transform: translateY(150%);
+    opacity: 0.9;
+}
+
+.b1 {
+    background-color: tomato;
+    z-index: 100;
+}
+
+.b2 {
+    background-color: slateblue;
+    position: absolute;
+    top: 8px;
+    z-index: 90;
+}
+
+.b3 {
+    background-color: crimson;
+    position: absolute;
+    top: 8px;
+    z-index: 80;
+}
